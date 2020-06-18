@@ -398,7 +398,7 @@
 
    
 
-**Windows 10:  **
+**Windows 10:**
 
 -   CVE-2015-1769        MS15-085 - Vulnerability in Mount Manager - Could Allow Elevation of Privilege
 
