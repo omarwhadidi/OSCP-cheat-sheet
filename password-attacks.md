@@ -655,11 +655,11 @@ leverage the power of both the CPU and the GPU to reach incredible password crac
    
     -    Hidden Files
 
-	-  apt-get install steghide
-	-  steghide embed -ef [file.txt] -cf [image.png]
-	-  embed a file into an image
-	-  steghide embed -ef [file.txt] -cf [image.png] -p [pass]
-	-  embed a file with password protection
-	-  steghide extract -sf [image.jpeg]
-	-  extract a file from an image
+	-   apt-get install steghide
+	-   steghide embed -ef [file.txt] -cf [image.png]
+	-   embed a file into an image
+	-   steghide embed -ef [file.txt] -cf [image.png] -p [pass]
+	-   embed a file with password protection
+	-   steghide extract -sf [image.jpeg]
+	-   extract a file from an image
 

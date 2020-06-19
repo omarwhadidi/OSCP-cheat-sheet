@@ -426,7 +426,7 @@
 -   CVE-2017-8487        allows an attacker to execute code when a victim opens a specially crafted file - remote code execution
 
 **\[+\] Windows version number:**
-
+<pre>
 -  **Operating System**                  **Version Number**
 -  Windows 1.0                                1.04
 -  Windows 2.0                                2.11
@@ -445,4 +445,5 @@
 -  Windows Vista                              6.0.6000
 -  Windows 7                                  6.1.7600
 -  Windows 8.1                                6.3.9600
--  Windows 10                                 10.0.10240
+-  Windows 10   &nbsp;                        10.0.10240
+</pre>
