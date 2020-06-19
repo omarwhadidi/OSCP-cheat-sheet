@@ -16,7 +16,7 @@
 
 - **Mimikatz**
 
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
 
 -   **World-list Generation**
 
@@ -648,9 +648,18 @@ leverage the power of both the CPU and the GPU to reach incredible password crac
 -   **General Notes**
 
     -   if  pc is a workgroup  passwords are saved locally on the machine in sam file
-
     -   if pc is in a domain password are stored locally and in domain controller
-
     -   Brute force zip files
 
         -   fcrackzip --u --D --p dictionary.txt zip\_file
+   
+    -    Hidden Files
+
+	-  apt-get install steghide
+	-  steghide embed -ef [file.txt] -cf [image.png]
+	-  embed a file into an image
+	-  steghide embed -ef [file.txt] -cf [image.png] -p [pass]
+	-  embed a file with password protection
+	-  steghide extract -sf [image.jpeg]
+	-  extract a file from an image
+

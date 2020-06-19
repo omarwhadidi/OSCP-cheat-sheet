@@ -424,3 +424,25 @@
 -   CVE-2008-4250        ms08\_067\_netapi  - exploits a parsing flaw in the path canonicalization code of NetAPI32.dll - bypassing NX
 
 -   CVE-2017-8487        allows an attacker to execute code when a victim opens a specially crafted file - remote code execution
+
+**\[+\] Windows version number:**
+
+-  **Operating System**                  **Version Number**
+-  Windows 1.0                                1.04
+-  Windows 2.0                                2.11
+-  Windows 3.0                                3
+-  Windows NT 3.1                             3.10.528
+-  Windows for Workgroups 3.11                3.11
+-  Windows NT Workstation 3.5                 3.5.807
+-  Windows NT Workstation 3.51                3.51.1057
+-  Windows 95                                 4.0.950
+-  Windows NT Workstation 4.0                 4.0.1381
+-  Windows 98                                 4.1.1998
+-  Windows 98 Second Edition                  4.1.2222
+-  Windows Me                                 4.90.3000
+-  Windows 2000 Professional                  5.0.2195
+-  Windows XP                                 5.1.2600
+-  Windows Vista                              6.0.6000
+-  Windows 7                                  6.1.7600
+-  Windows 8.1                                6.3.9600
+-  Windows 10                                 10.0.10240
