@@ -43,11 +43,8 @@
     -   **CEWL tool**
 
 	 " Generate a world-list about the target from given URL by searching in the site's words and metadata"
-
         -   Cewl --help
-
         -   Cewl -w pass.txt \[url\]
-
         -   Cewl -m 5 -w pass.txt \[url\]
 
             -   -\> with minimum nb of char of 5
@@ -55,47 +52,46 @@
         -   Cewl -d 1 -m 5 \--with-numbers -v -w passcewl.txt \[url\]
 
 
--   **CUPP tool**
+    -   **CUPP tool**
 
-    -   **Cup --I :** make a world list that has a relation to the target by enter some info about him and answer given questions
-        by the app in the interactive mode
+        -   **Cup --I :** make a world list that has a relation to the target by enter some info about him and answer given questions by the app in the interactive mode
 
--   **John the ripper**
+    -   **John the ripper**
 
-    -   John --worldlist=pass.txt --rules=wordlist/single --stdout \>john.txt
+        -   John --worldlist=pass.txt --rules=wordlist/single --stdout \>john.txt
 
-    -   john \--wordlist= pass.txt \--rules=wordlist \--stdout \> john1.txt
+        -   john \--wordlist= pass.txt \--rules=wordlist \--stdout \> john1.txt
 
-    -   john \--wordlist= pass.txt \--rules=single \--stdout \> john2.txt
+        -   john \--wordlist= pass.txt \--rules=single \--stdout \> john2.txt
 
-    -   Generate custom rule :
+        -   Generate custom rule :
 
-        -   nano /etc/john/john.conf && Search on \"list.rules:wordlist\"
+            -   nano /etc/john/john.conf && Search on \"list.rules:wordlist\"
 
-        -   \[List.Rules:MYOWN\]
+            -   \[List.Rules:MYOWN\]
 
-        -   c\^\[0-9\]\$\[0-9\]\$\[0-9\]
+            -   c\^\[0-9\]\$\[0-9\]\$\[0-9\]
 
-        -   <https://www.openwall.com/john/doc/RULES.shtml> -\> rules manual
+            -   <https://www.openwall.com/john/doc/RULES.shtml> -\> rules manual
 
-    -   john \--wordlist= pass.txt \--rules=MYOWN \--stdout \> john1.txt
+            -   john \--wordlist= pass.txt \--rules=MYOWN \--stdout \> john1.txt
 
--   **Built-in world-lists**
+    -   **Built-in world-lists**
 
-    -   **Rockyou World-list**
+        -   **Rockyou World-list**
 
-        -   cd /usr/share/wordlists/ && gzip -d rockyou.txt.gz
+            -   cd /usr/share/wordlists/ && gzip -d rockyou.txt.gz
 
-    -   **We can download worldlists online such as : darkcOde , Rockyou**
+        -   **We can download worldlists online such as : darkcOde , Rockyou**
 
-    -   **Offline world-lists in Linux in "usr/share"**
+        -   **Offline world-lists in Linux in "usr/share"**
 
-    -   **Apt install seclists**  -\> has a lot of useful worldlists
+        -   **Apt install seclists**  -\> has a lot of useful worldlists
 
-    -   **Fuzzdb wordlists 	  -\>** git clone <https://github.com/fuzzdb-project/fuzzdb.git>
+        -   **Fuzzdb wordlists 	  -\>** git clone <https://github.com/fuzzdb-project/fuzzdb.git>
 
 
-<h2 align="center">**PASSWORD CRACKING**</h2>
+- <h2 align="center">**PASSWORD CRACKING**</h2>
 
     -   **Passive online attack**
 
@@ -387,7 +383,7 @@ leverage the power of both the CPU and the GPU to reach incredible password crac
         -   \--username: This tells Hashcat that the input file contains not only hashes but also usernames; it Expects the "username: hash "format
 
 
-<h2 align="center">**Mimikatz**</h2>
+- <h2 align="center">**Mimikatz**</h2>
 
     -   **What is mimikatz**
 
