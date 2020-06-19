@@ -1,8 +1,8 @@
-<h1 align="center">**INFO GATHERING (OSINT)** </h1>
+<h1 align="center">INFO GATHERING (OSINT) </h1>
 
-<h2 align="center">**Info Gathering** (passive Reconnaissance/ Footprinting) </h2>
+<h2 align="center">Info Gathering (passive Reconnaissance/ Footprinting) </h2>
 
-</P>"Gather info about the target without being connected to him" </P>
+</P align="center">"Gather info about the target without being connected to him" </P>
 
 -   **Domain & registration info**
 
@@ -245,7 +245,7 @@
     -   Pastebin.com 		-\> site for sharing texts can be useful in recon phase
 
 
-<h2 align="center">**SCANNING (Active Reconnaissance)**</h2>
+<h2 align="center">SCANNING (Active Reconnaissance)</h2>
 
 <p align="center">"Gather info about the target by being connected to him"</p>
 
@@ -395,11 +395,17 @@
 
             -   **Wpscan**
 
-                -   wpscan \--url \[website\]    	-\> to get info and possible vulnerabilities of the website
+                -   wpscan \--url \[website\]    	
+ 
+                    -   -\> to get info and possible vulnerabilities of the website
 
-                -   wpscan \--url \[website\]  \--enumerate u   -\> to get the username of wp-panel
+                -   wpscan \--url \[website\]  \--enumerate u   
 
-                -   wpscan \--url \[website\] \--passwords passwd.txt \--usernames \[user found\]   -\> bruteforce to get the password
+                    -   -\> to get the username of wp-panel
+
+                -   wpscan \--url \[website\] \--passwords passwd.txt \--usernames \[user found\]   
+  
+                    -   -\> bruteforce to get the password
 					  
 
 	    -   **joomscan**
@@ -491,9 +497,9 @@
 
 -   **Websites Crawling**
 
-    -   **Zap**
+    -   Zap
 
-    -   **Burp suite**
+    -   Burp suite
 
 -   **Directory Bruteforcing**
 
@@ -623,23 +629,21 @@
 
             -   msf\> use exploit/windows/mysql/mysql\_start\_up  -\>Execute commands Windows, Creds
 
--   **Nmap**
+        -   **Nmap**
 
-    -   nmap -sV -Pn -vv
-        -script=mysql-audit,mysql-databases,mysql-dump-hashes,mysql-empty-password,mysql-enum,mysql-info,mysql-query,mysql-users,mysql-variables,mysql-vuln-cve2012-2122
-        \[ip\] -p 3306
+            -   nmap -sV -Pn -vv -script=mysql-audit,mysql-databases,mysql-dump-hashes,mysql-empty-password,mysql-enum,mysql-info,mysql-query,mysql-users,mysql-variables,mysql-vuln-cve2012-2122  \[ip\] -p 3306
 
--   **MySQL important commands**
+    -   **MySQL important commands**
 
-    -   show databases;
+        -   show databases;
 
-    -   use \[database name\]
+        -   use \[database name\]
 
-    -   show tables;
+        -   show tables;
 
-    -   select \* from \[table\_name\]
+        -   select \* from \[table\_name\]
 
-    -   mysqldump -u root -p Password123! \--all-databases \> db\_backup.sql    	-\> dump all databases
+        -   mysqldump -u root -p Password123! \--all-databases \> db\_backup.sql    	-\> dump all databases
 
 
 -   **Nfs port 2049 open**
@@ -677,33 +681,24 @@
     -   **Powercat**
 
 
-**-\> Nmap :**
+- <h2 align="center"> Nmap : </h2>
 
--   **Nmap network discovery**
+    -   **Nmap timing**
 
--   **Nmap port scaning**
+        -   T0 : paranoid ( intrusion Detection System evasion)
 
--   **Nmap timing**
+        -   T1 : sneaky ( intrusion Detection System evasion)
 
-    -   T0 : paranoid ( intrusion Detection System evasion)
+        -   T2 : polite ( slows down the scan to use less bandwidth and use less target machine resources)
 
-    -   T1 : sneaky ( intrusion Detection System evasion)
+        -   T3 : normal default
 
-    -   T2 : polite ( slows down the scan to use less bandwidth and use less target machine resources)
+        -   T4 : agressive
 
-    -   T3 : normal default
+        -   T5 : insame
 
-    -   T4 : agressive
+            -     Ex : nmap -sX -p- 192.168.1.4 -T4
 
-    -   T5 : insame
-
-        -     Ex : nmap -sX -p- 192.168.1.4 -T4
-
--   **Nmap scripting engine**
-
-    -   **Scripts location**
-
-        -    ls /usr/share/nmap/scripts/
 
     -   **Target specification**
 
@@ -807,7 +802,13 @@
         -   nmap 192.168.1.1 \--reason   -\> Display the reason a port is in a particular state, same as -vv
 
         -   nmap 192.168.1.1 \--open     -\>show only open ports
-      
+
+    -   **Nmap scripting engine**     
+
+    -   **Scripts location**
+
+        -    ls /usr/share/nmap/scripts/ 
+
     -   **Categories of scripts (nse) -\>** written in lua
 
         -   vuln : look for a given vuln in the target
@@ -872,9 +873,13 @@
 
         -   nmap -sV -p 443 \--script=ssl-heartbleed 192.168.1.0/24
 
-**-\>masscan:**
+        -   nmap -sV IP\_ADDRESS -oX scan.xml && xsltproc scan.xml -o \"\`date +%m%d%y\`\_report.html\" 
 
-"Fastest port scanner can scan the whole internet in 6 mins "
+            -   -\> generating a nice report
+
+<h2 align="center">masscan </h2>
+
+<p align="center">"Fastest port scanner can scan the whole internet in 6 mins " </p>
 
 -   **port specification**
 
@@ -924,9 +929,6 @@
 
         -   -\> specify the interface + udp scan
 
-    -   nmap -sV IP\_ADDRESS -oX scan.xml && xsltproc scan.xml -o \"\`date +%m%d%y\`\_report.html\" 
-
-        -   -\> generating a nice report
 
 <h2 align="center">**ENUMERATION** </h2>
 
@@ -1055,9 +1057,10 @@
 
 
 -   **Smb & Netbios Enum (port 135 , 139 , 445)**
+
     “Samba is a Linux implementation of SMB”
 
-    -   **Nmblookup **
+    -   **Nmblookup**
 
         -   Used to query NetBIOS names and map them to IP addresses in a network using NetBIOS
         -   nmblookup -A 192.168.1.103
