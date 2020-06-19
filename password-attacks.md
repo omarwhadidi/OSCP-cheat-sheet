@@ -43,6 +43,7 @@
     -   **CEWL tool**
 
 	" Generate a world-list about the target from given URL by searching in the site's words and metadata"
+       
         -   Cewl --help
         -   Cewl -w pass.txt \[url\]
         -   Cewl -m 5 -w pass.txt \[url\]
