@@ -1,4 +1,4 @@
-****Password Attacks****
+<h1 align="center">**Password Attacks**</h1>
 
 - **World-list Generation**
 
@@ -18,7 +18,7 @@
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
 
--   **World-list Generation**
+<h2 align="center">**World-list Generation**</h2>
 
     -   **Crunch tool**
 
@@ -95,7 +95,7 @@
     -   **Fuzzdb wordlists 	  -\>** git clone <https://github.com/fuzzdb-project/fuzzdb.git>
 
 
--   **PASSWORD CRACKING**
+<h2 align="center">**PASSWORD CRACKING**</h2>
 
     -   **Passive online attack**
 
@@ -293,7 +293,7 @@
 
         -   **social Engineering and Shoulder Surfing**
 
-**-\>JOHN THE RIPPER VS HASHCAT :**
+<h2 align="center">**JOHN THE RIPPER VS HASHCAT :**</h2>
 
 " While John the Ripper is a great tool for cracking password hashes, its speed is limited to the power of the CPUs dedicated to the task. In
 recent years, Graphic Processing Units (GPUs) have become incredibly powerful and are, of course, found in every computer with a display.
@@ -387,7 +387,7 @@ leverage the power of both the CPU and the GPU to reach incredible password crac
         -   \--username: This tells Hashcat that the input file contains not only hashes but also usernames; it Expects the "username: hash "format
 
 
--   **Mimikatz**
+<h2 align="center">**Mimikatz**</h2>
 
     -   **What is mimikatz**
 
@@ -655,11 +655,11 @@ leverage the power of both the CPU and the GPU to reach incredible password crac
     
     -   Hidden Files
 
-	-   apt-get install steghide
-	-   steghide embed -ef [file.txt] -cf [image.png]
-	-   embed a file into an image
-	-   steghide embed -ef [file.txt] -cf [image.png] -p [pass]
-	-   embed a file with password protection
-	-   steghide extract -sf [image.jpeg]
-	-   extract a file from an image
+        -   apt-get install steghide
+        -   steghide embed -ef [file.txt] -cf [image.png]
+        -   embed a file into an image
+        -   steghide embed -ef [file.txt] -cf [image.png] -p [pass]
+        -   embed a file with password protection
+        -   steghide extract -sf [image.jpeg]
+        -   extract a file from an image
 
