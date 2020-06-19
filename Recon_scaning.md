@@ -1,8 +1,8 @@
-<h1 style="text-align:center">**INFO GATHERING (OSINT)** </h1>
+<h1 align="center">**INFO GATHERING (OSINT)** </h1>
 
-<H2 style="text-align:center">**Info Gathering** (passive Reconnaissance/ Footprinting) </H2>
+<h2 align="center">**Info Gathering** (passive Reconnaissance/ Footprinting) </h2>
 
-<P style="text-align:center">"Gather info about the target without being connected to him" </P>
+</P>"Gather info about the target without being connected to him" </P>
 
 -   **Domain & registration info**
 
@@ -245,9 +245,9 @@
     -   Pastebin.com 		-\> site for sharing texts can be useful in recon phase
 
 
-**SCANNING (Active Reconnaissance)**
+<h2 align="center">**SCANNING (Active Reconnaissance)**</h2>
 
-"Gather info about the target by being connected to him"
+<p align="center">"Gather info about the target by being connected to him"</p>
 
 -   **Ping , traceroute , tracert**
 
@@ -399,9 +399,8 @@
 
                 -   wpscan \--url \[website\]  \--enumerate u   -\> to get the username of wp-panel
 
-                -   wpscan \--url \[website\] \--passwords passwd.txt \--usernames \[user found\] 
-
-					  -\> bruteforce to get the password
+                -   wpscan \--url \[website\] \--passwords passwd.txt \--usernames \[user found\]   -\> bruteforce to get the password
+					  
 
 	    -   **joomscan**
 
@@ -506,8 +505,7 @@
 
     -   **Dirb**
 
-        -   dirb [http://example.com] -r -o
-            output.txt
+        -   dirb [http://example.com] -r -o output.txt
 
     -   **Dirsearch**
 
@@ -523,8 +521,7 @@
 
         -   wfuzz -c -w /usr/share/wfuzz/wordlist/general/megabeast.txt \$ip:60080/?FUZZ=test 
 
-        -   wfuzz -c \--hw 114 -w
-            /usr/share/wfuzz/wordlist/general/megabeast.txt \$ip:60080/?page=FUZZ 
+        -   wfuzz -c \--hw 114 -w /usr/share/wfuzz/wordlist/general/megabeast.txt \$ip:60080/?page=FUZZ 
 
         -   wfuzz -c -w /usr/share/wfuzz/wordlist/general/common.txt  \"\$ip:60080/?page=mailer&mail=FUZZ\"
 
@@ -624,9 +621,7 @@
 
             -   msf\> use auxiliary/scanner/mysql/mysql\_schemadump     -\> Creds
 
-            -   msf\> use exploit/windows/mysql/mysql\_start\_up
-
-				 -\>Execute commands Windows, Creds
+            -   msf\> use exploit/windows/mysql/mysql\_start\_up  -\>Execute commands Windows, Creds
 
 -   **Nmap**
 
@@ -712,7 +707,7 @@
 
     -   **Target specification**
 
-        -   nmap 192.168.1.1   			 -\>  scan a target
+        -   nmap 192.168.1.1   			-\>  scan a target
 
         -   nmap 192.168.1.1 192.168.2.1  	-\> scan multiple targets
 
@@ -799,8 +794,7 @@
 
         -   nmap -sV 192.168.1.1
 
-        -   nmap  -sV \--version-intensity 5 192.168.1.1    -\> More aggressive Service Detection  Intensity level range 0 to 9 
-            Higher number increases possibility of correctness
+        -   nmap  -sV \--version-intensity 5 192.168.1.1    -\> More aggressive Service Detection  Intensity level range 0 to 9  Higher number increases possibility of correctness
 
         -   nmap  -sV \--version-all 192.168.1.1          -\>Enable intensity level 9. Higher possibility of correctness. Slower
 
@@ -934,62 +928,78 @@
 
         -   -\> generating a nice report
 
-**ENUMERATION**
+<h2 align="center">**ENUMERATION** </h2>
 
--   **Snmp Enum**
+-   **Snmp Enum (port 161 , 162)**
 
     -   **Notes** :
 
+        -   use snmp protocol to enumerate (if the user use snmp in his network) .Community strings are passwords there are 2 types of community strings read only , read & write . 
 
--   use snmp protocol to enumerate (if the user use snmp in his network) on port 161 .
-	 Community strings are passwords there are 2 types of community strings read only , read & write . 
-	 default community (pass) is public
+        - Snmp default Communities (passwords) :
 
--   **snmpenum**
-
-    -   snmpenum -t 192.168.1.5
-
--   **Snmpwalk**
-
-    -   snmpwalk -v1 -c public 192.168.1.244
-
-    -   snmpwalk -v1 -c public 192.168.1.244 iso.3.6.1.2.1.1.5.0
-
--   **Onesixtyone**
-
-    -   onesixtyone -c community.txt 192.168.1.244
-
-    -   onesixtyone -c community.txt -i ips.txt
-
--   **Snmpset**
-
-    -   snmpset -v1 -c private 10.0.2.10 iso.3.6.1.2.1.1.5.0 s Hacked
-
--   **Snmp-check**
-
-    -   snmpcheck -t 192.168.1.5 -c public
-
--   **Metasploit**
-
-    -   use auxiliary/scanner/snmp/snmp\_enum
-
--   **Nmap**
-
-    -   nmap -p139,445 \[ip address\]
-
-    -   nmap -p139,445 --script smb-enum-users \[ip address\]
-
-    -   nmap -p139,445 --script smb-enum-users --script-args=unsafe=1 \[ip address\]
+            - community , public , private , manager , cisco
+        
+        - Snmp MIB Trees
+        
+            - 1.3.6.1.2.1.25.1.6.0 System Processes
+            - 1.3.6.1.2.1.25.4.2.1.2 Running Programs
+            - 1.3.6.1.2.1.25.4.2.1.4 Processes Path
+            - 1.3.6.1.2.1.25.2.3.1.4 Storage Units
+            - 1.3.6.1.2.1.25.6.3.1.2 Software Name
+            - 1.3.6.1.4.1.77.1.2.25 User Accounts
+            - 1.3.6.1.2.1.6.13.1.3 TCP Local Ports
 
 
--   **Smtp Enum**
+    -   **snmpenum**
+
+        -   snmpenum -t 192.168.1.5
+
+    -   **Snmpwalk**
+
+        -   snmpwalk -v1 -c public 192.168.1.244
+
+        -   snmpwalk -v1 -c public 192.168.1.244 iso.3.6.1.2.1.1.5.0
+
+    -   **Onesixtyone**
+
+        -   onesixtyone -c community.txt 192.168.1.244
+
+        -   onesixtyone -c community.txt -i ips.txt
+
+    -   **Snmpset**
+
+        -   snmpset -v1 -c private 10.0.2.10 iso.3.6.1.2.1.1.5.0 s Hacked
+
+    -   **Snmp-check**
+
+        -   snmpcheck -t 192.168.1.5 -c public
+
+    -   **Metasploit**
+
+        -   use auxiliary/scanner/snmp/snmp\_enum
+
+        -   auxiliary/scanner/snmp/snmp_enum_hp_laserjet
+
+        -   auxiliary/scanner/snmp/snmp_enumshares
+
+        -   auxiliary/scanner/snmp/snmp_enumusers
+
+        -   auxiliary/scanner/snmp/snmp_login
+
+
+    -   **Nmap**
+
+        -   nmap -p 161 --script=snmp-info [ip]
+
+
+
+-   **Smtp Enum (port 25) or pop3 (port 110)**
 
     -   **Smtp commands**
 
-        -   **HELO** -- This is the command that the client sends to the
-            server to initiate a conversation. Generally, the IP address
-            or domain name must accompany this command, such as HELO 192.168.101 or HELO
-            [client.microsoft.com](http://client.microsoft.com/).
+        -   **HELO** -- This is the command that the client sends to the server to initiate a conversation. Generally, the IP address
+            or domain name must accompany this command, such as HELO 192.168.101 or HELO  [client.microsoft.com](http://client.microsoft.com/).
 
         -   **EHLO** -- This command is the same as HELO, but communicates to the server that the client wants to use
             Extended SMTP. If the server does not offer ESMTP, it will still recognize this command and reply appropriately.
@@ -1019,19 +1029,48 @@
 
     -   **With "smtp-enum" module in metasploit**
 
-    -   **VERIFY users manually with telnet**
+    -   **VERIFY users manually with telnet/nc**
 
-        -   telnet 192.168.1.104 25
+        -   telnet 192.168.1.104 25 or nc 192.168.1.104 25
 
         -   VRFY \[user\]
 
--   **Smb & Netbios Enum**
+        -   USER \[user\]
+
+        -   EXPN \[user\]
+
+    -   **Nmap**
+
+        -   nmap --script=smtp-commands,smtp-enum-users,smtp-vuln-cve2010-4344,smtp-vuln-cve2011-1720,smtp-vuln-cve2011-1764 -p 25
+
+    -   **Metasploit**
+
+        -   auxiliary/scanner/smtp/smtp_enum
+
+        -   auxiliary/scanner/smtp/smtp_ntlm_domain
+
+        -   auxiliary/scanner/smtp/smtp_relay
+
+        -   auxiliary/scanner/smtp/smtp_version 
+
+
+-   **Smb & Netbios Enum (port 135 , 139 , 445)**
+    “Samba is a Linux implementation of SMB”
+
+    -   **Nmblookup **
+
+        -   Used to query NetBIOS names and map them to IP addresses in a network using NetBIOS
+        -   nmblookup -A 192.168.1.103
 
     -   **Nbttscan**
+
+        -   This is a command utility that tries to scan NetBIOS name servers open on a local or remote TCP/IP network and because it is a first step in finding open shares. It is created on the functionality of the Windows standard tool “nbtstat”,
 
         -   nbtscan 192.168.1.0/24 -\> who run smb
 
     -   **Smbclient**
+
+        -   smbclient is a client that can ‘talk’ to an SMB/CIFS server. It offers an interface similar to that of the FTP program. It can upload/download files from and to smb server, retrieving directory information from the server and so on.  List shares …etc
 
         -   **List shares**
 
@@ -1043,9 +1082,13 @@
 
             -   smbclient //192.168.0.70/tmp
 
-            -   smbclient -U TestUser //192.168.0.70/tmp
+            -   smbclient -U TestUser //192.168.0.70/tmp    -> linux share
+
+            -   smbclient –U user \\\\192.168.1.10\\share   -> windows share
 
     -   **Smbmap**
+
+        -   Same as smbclient allows us to enumerate samba share drives across an entire domain.{ List shares, list drive permissions, share contents, upload/download functionality }
 
         -   **List shares**
 
@@ -1053,25 +1096,72 @@
 
             -   smbmap -u TestUser -p TestPass -H 192.168.0.34
 
--   **User Enum**
+    -   **Nmap**
+
+        -   nmap --script smb-vuln* -p 139,445 [ip]
+
+        -   nmap -p139,445 \[ip address\]
+
+        -   nmap -p139,445 --script smb-enum-users \[ip address\]
+
+        -   nmap -p139,445 --script smb-enum-users --script-args=unsafe=1 \[ip address\]
+
+    -   **Metasploit**
+
+        -   auxiliary/scanner/smb/psexec_loggedin_users
+
+        -   auxiliary/scanner/smb/smb_enumshares
+
+        -   auxiliary/scanner/smb/smb_enumusers
+
+        -   auxiliary/scanner/smb/smb_enumusers_domain
+
+        -   auxiliary/scanner/smb/smb_login
+
+        -   auxiliary/scanner/smb/smb_lookupsid
+
+        -   auxiliary/scanner/smb/smb_ms17_010
+
+        -   auxiliary/scanner/smb/smb_version
+
+
+-   **User Enum via smb(samba)**
 
     -   **Rpcclient**
+
+        -   Depending on the host configuration, the RPC endpoint mapper can be accessed through TCP and UDP port 135 (msrpc) or , via SMB with a null or authenticated session (TCP 139 and 445), and as a web service listening on TCP port 593
+
+        -   rpcclient is a utility initially developed to test MS-RPC functionality in Samba itself.
 
         -   rpcclient -U \"\" -N 10.0.2.4 -\> null session
 
         -   rpcclient -U \"test\" 10.0.2.4 -\> session with user
 
-            -   rpcclient\>srvinfo
+            -   rpcclient\> srvinfo
 
-            -   rpcclient\>enumdomusers
+            -   rpcclient\> enumdomusers  -> get username as well as their rid
 
-            -   rpcclient\>getdompwinfo
+            -   rpcclient\> getdompwinfo
+
+            -   rpcclient\> querydominfo
+
+            -   rpcclient\> enumalsgroups domain
+
+            -   rpcclient\> lookupnames administrators
+
+            -   rpcclient\> enumprivs
+
+            -   rpcclient\> queryuser user 
 
     -   **Enum4linux**
 
-        -   is a tool for enumerating information from Windows and Samba systems
+        -   is a tool for enumerating information from Windows and linux os that have Samba(SMB) working on their hosts . It is written in Perl and is basically a wrapper around the Samba tools smbclient, rpclient, net, and nmblookup  (no interaction only enum)
+
+        -   can list users , shares , passwords policies , domain and group memberships
 
         -   enum4linux -{U\|S\|P\|G} 10.0.2.4
+
+        -   enum4linux -a 10.0.2.4  -> run all scans
 
         -   enum4linux -{U\|S\|P\|G} -u TestUser -p TestPass 192.168.100.200
 
