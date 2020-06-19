@@ -18,7 +18,7 @@
 
 \-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
 
-<h2 align="center">**World-list Generation**</h2>
+- <h2 align="center">**World-list Generation**</h2>
 
     -   **Crunch tool**
 
@@ -44,15 +44,15 @@
 
 	 " Generate a world-list about the target from given URL by searching in the site's words and metadata"
 
--   Cewl --help
+        -   Cewl --help
 
--   Cewl -w pass.txt \[url\]
+        -   Cewl -w pass.txt \[url\]
 
--   Cewl -m 5 -w pass.txt \[url\]
+        -   Cewl -m 5 -w pass.txt \[url\]
 
-    -   -\> with minimum nb of char of 5
+            -   -\> with minimum nb of char of 5
 
--   Cewl -d 1 -m 5 \--with-numbers -v -w passcewl.txt \[url\]
+        -   Cewl -d 1 -m 5 \--with-numbers -v -w passcewl.txt \[url\]
 
 
 -   **CUPP tool**
