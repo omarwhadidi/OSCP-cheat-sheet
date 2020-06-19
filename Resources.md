@@ -327,25 +327,32 @@
 **Windows XP:**
 <pre>
 
--   CVE-2012-4349        Unquoted windows search path - Windows provides the capability of including spaces in path names - can be root
+-   CVE-2012-4349        Unquoted windows search path - Windows provides the capability of including spaces in path names 
+                         - can be root
 
--   CVE-2011-1345        Internet Explorer does not properly handle objects in memory - allows remote execution of code via object
+-   CVE-2011-1345        Internet Explorer does not properly handle objects in memory 
+                         - allows remote execution of code via object
 
--   CVE-2010-3138        EXPLOIT-DB 14765 - Untrusted search path vulnerability - allows local users to gain privileges via a Trojan horse
+-   CVE-2010-3138        EXPLOIT-DB 14765 - Untrusted search path vulnerability - allows local users to gain privileges 
+                         via a Trojan horse
 
 -   CVE-2011-5046        EXPLOIT-DB 18275 - GDI in windows does not properly validate user-mode input - allows remote code execution
 
--   CVE-2002-1214        ms02\_063\_pptp\_dos - exploits a kernel based overflow when sending abnormal PPTP Control Data packets - code execution, DoS
+-   CVE-2002-1214        ms02\_063\_pptp\_dos - exploits a kernel based overflow when sending abnormal PPTP Control Data packets 
+                         - code execution, DoS
 
 -   CVE-2003-0352        ms03\_026\_dcom - exploits a stack buffer overflow in the RPCSS service
 
 -   CVE-2003-0533        MS04-011 - ms04\_011\_lsass - exploits a stack buffer overflow in the LSASS service
 
--   CVE-2003-0719        ms04\_011\_pct - exploits a buffer overflow in the Microsoft Windows SSL PCT protocol stack - Private communication target overflow
+-   CVE-2003-0719        ms04\_011\_pct - exploits a buffer overflow in the Microsoft Windows SSL PCT protocol stack 
+                         - Private communication target overflow
 
--   CVE-2010-3970        ms11\_006\_createsizeddibsection - exploits a stack-based buffer overflow in thumbnails within .MIC files - code execution
+-   CVE-2010-3970        ms11\_006\_createsizeddibsection - exploits a stack-based buffer overflow in thumbnails within .MIC files 
+                         - code execution
 
--   CVE-2010-3147        EXPLOIT-DB 14745 - Untrusted search path vulnerability in wab.exe - allows local users to gain privileges via a Trojan horse
+-   CVE-2010-3147        EXPLOIT-DB 14745 - Untrusted search path vulnerability in wab.exe - allows local users to gain privileges 
+                         via a Trojan horse
 
 -   CVE-2003-0812        ms03\_049\_netapi - exploits a stack buffer overflow in the NetApi32
 
@@ -360,25 +367,34 @@
 **Windows 7:**
 <pre>
 
--   CVE-2014-4114        ms14\_060\_sandworm - exploits a vulnerability found in Windows Object Linking and Embedding - arbitrary code execution
+-   CVE-2014-4114        ms14\_060\_sandworm - exploits a vulnerability found in Windows Object Linking and Embedding 
+                         - arbitrary code execution
 
--   CVE-2015-0016        ms15\_004\_tswbproxy -  abuses a process creation policy in Internet Explorer\'s sandbox - code execution
+-   CVE-2015-0016        ms15\_004\_tswbproxy -  abuses a process creation policy in Internet Explorer\'s sandbox 
+                         - code execution
 
--   CVE-2014-4113        ms14\_058\_track\_popup\_menu - exploits a NULL Pointer Dereference in win32k.sys - arbitrary code execution
+-   CVE-2014-4113        ms14\_058\_track\_popup\_menu - exploits a NULL Pointer Dereference in win32k.sys 
+                         - arbitrary code execution
 
--   CVE-2010-3227        EXPLOIT-DB - Stack-based buffer overflow in the UpdateFrameTitleForDocument method - arbitrary code execution
+-   CVE-2010-3227        EXPLOIT-DB - Stack-based buffer overflow in the UpdateFrameTitleForDocument method 
+                         - arbitrary code execution
 
--   CVE-2018-8494        remote code execution vulnerability exists when the Microsoft XML Core Services MSXML parser processes user input
+-   CVE-2018-8494        remote code execution vulnerability exists when the Microsoft XML Core Services MSXML parser processes 
+                         user input
 
--   CVE-2010-2744        EXPLOIT-DB 15894 - kernel-mode drivers in  windows do not properly manage a window class - allows privileges escalation
+-   CVE-2010-2744        EXPLOIT-DB 15894 - kernel-mode drivers in  windows do not properly manage a window class 
+                         - allows privileges escalation
 
--   CVE-2010-0017        ms10\_006\_negotiate\_response\_loop - exploits a denial of service flaw in the Microsoft Windows SMB client - DoS
+-   CVE-2010-0017        ms10\_006\_negotiate\_response\_loop - exploits a denial of service flaw in the Microsoft Windows SMB 
+                         client - DoS
 
 -   CVE-2010-0232        ms10\_015\_kitrap0d - create a new session with SYSTEM privileges via the KiTrap0D exploit
 
--   CVE-2010-2550        ms10\_054\_queryfs\_pool\_overflow - exploits a denial of service flaw in the Microsoft Windows SMB service - DoS
+-   CVE-2010-2550        ms10\_054\_queryfs\_pool\_overflow - exploits a denial of service flaw in the Microsoft 
+                         Windows SMB service - DoS
 
--   CVE-2010-2568        ms10\_046\_shortcut\_icon\_dllloader - exploits a vulnerability in the handling of Windows Shortcut files (.LNK) - run a payload
+-   CVE-2010-2568        ms10\_046\_shortcut\_icon\_dllloader - exploits a vulnerability in the handling of Windows 
+                         Shortcut files (.LNK) - run a payload
 
 </pre>
 
@@ -386,13 +402,15 @@
 
 <pre>
 
--   CVE-2013-0008        ms13\_005\_hwnd\_broadcast - attacker can broadcast commands from lower Integrity Level process to a higher one - privilege escalation
+-   CVE-2013-0008        ms13\_005\_hwnd\_broadcast - attacker can broadcast commands from lower Integrity Level process 
+                         to a higher one - privilege escalation
 
 -   CVE-2013-1300        ms13\_053\_schlamperei - kernel pool overflow in Win32k - local privilege escalation
 
 -   CVE-2013-3660        ppr\_flatten\_rec - exploits allows memory corruption
 
--   CVE-2013-3918        ms13\_090\_cardspacesigninhelper - exploits CardSpaceClaimCollection class from the icardie.dll ActiveX control - code execution
+-   CVE-2013-3918        ms13\_090\_cardspacesigninhelper - exploits CardSpaceClaimCollection class from the icardie.dll 
+                         ActiveX control - code execution
 
 -   CVE-2013-7331        ms14\_052\_xmldom - uses Microsoft XMLDOM  object to enumerate a remote machine\'s filenames
 
@@ -400,7 +418,8 @@
 
 -   CVE-2014-6332        ms14\_064\_ole\_code\_execution -  exploits the Windows OLE Automation array vulnerability
 
--   CVE-2014-6352        ms14\_064\_packager\_python - exploits Windows Object Linking and Embedding (OLE) - arbitrary code execution
+-   CVE-2014-6352        ms14\_064\_packager\_python - exploits Windows Object Linking and Embedding (OLE) 
+                         - arbitrary code execution
 
 -   CVE-2015-0002        ntapphelpcachecontrol - NtApphelpCacheControl Improper Authorization Check - privilege escalation
 
@@ -423,9 +442,10 @@
 -   CVE-2015-2431        MS15-080 - Vulnerabilities in Microsoft Graphics Component - Could Allow Remote Code Execution
 
 -   CVE-2015-2441        MS15-091 - Vulnerabilities exist when Microsoft
-    Edge improperly accesses objects in memory - allows remote code execution
+                         Edge improperly accesses objects in memory - allows remote code execution
 
--   CVE-2015-0057        exploits GUI component of Windows namely the scrollbar element - allows complete control of a Windows machine
+-   CVE-2015-0057        exploits GUI component of Windows namely the scrollbar element 
+                        - allows complete control of a Windows machine
 
 </pre>
 
@@ -435,9 +455,11 @@
 
 -   CVE-2008-4114        ms09\_001\_write - exploits a denial of service vulnerability in the SRV.SYS driver - DoS
 
--   CVE-2008-4250        ms08\_067\_netapi  - exploits a parsing flaw in the path canonicalization code of NetAPI32.dll - bypassing NX
+-   CVE-2008-4250        ms08\_067\_netapi  - exploits a parsing flaw in the path canonicalization code of 
+                         NetAPI32.dll - bypassing NX
 
--   CVE-2017-8487        allows an attacker to execute code when a victim opens a specially crafted file - remote code execution
+-   CVE-2017-8487        allows an attacker to execute code when a victim opens a specially crafted file
+                         - remote code execution
 
 </pre>
 

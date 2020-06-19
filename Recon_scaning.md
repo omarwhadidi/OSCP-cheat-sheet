@@ -2,7 +2,7 @@
 
 <h2 align="center">Info Gathering (passive Reconnaissance/ Footprinting) </h2>
 
-</P align="center">"Gather info about the target without being connected to him" </P>
+<p align="center">"Gather info about the target without being connected to him" </P>
 
 -   **Domain & registration info**
 
