@@ -1,4 +1,4 @@
-**Resources**
+<h1 align="center">**Resources**</h1>
 
 1.  **OSINT**
 
@@ -445,5 +445,5 @@
 -  Windows Vista                              6.0.6000
 -  Windows 7                                  6.1.7600
 -  Windows 8.1                                6.3.9600
--  Windows 10   &nbsp;                        10.0.10240
+-  Windows 10                                10.0.10240
 </pre>

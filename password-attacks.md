@@ -652,8 +652,8 @@ leverage the power of both the CPU and the GPU to reach incredible password crac
     -   Brute force zip files
 
         -   fcrackzip --u --D --p dictionary.txt zip\_file
-   
-    -    Hidden Files
+    
+    -   Hidden Files
 
 	-   apt-get install steghide
 	-   steghide embed -ef [file.txt] -cf [image.png]
