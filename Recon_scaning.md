@@ -1,8 +1,8 @@
-**INFO GATHERING (OSINT)** 
+<h1 style="text-align:center">**INFO GATHERING (OSINT)** </h1>
 
-**Info Gathering** (passive Reconnaissance/ Footprinting)
+<H2 style="text-align:center">**Info Gathering** (passive Reconnaissance/ Footprinting) </H2>
 
-"Gather info about the target without being connected to him"
+<P style="text-align:center">"Gather info about the target without being connected to him" </P>
 
 -   **Domain & registration info**
 
