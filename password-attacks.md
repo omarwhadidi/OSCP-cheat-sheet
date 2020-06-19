@@ -1,10 +1,10 @@
-<h1 align="center">**Password Attacks**</h1>
+<h1 align="center">Password Attacks</h1>
 
 - **World-list Generation**
 
 - **Password Cracking**
 
-  - **-Passive online Attack:** No Bruteforcing just MITM and sniffing with tools like Ettercap & cain & adel
+  - **Passive online Attack:** No Bruteforcing just MITM and sniffing with tools like Ettercap & cain & adel
 
   - **Active online Attack:** occurs in Exploitation phase to attack service running in the target
 
@@ -16,9 +16,9 @@
 
 - **Mimikatz**
 
-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
+\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-\-
 
-- <h2 align="center">**World-list Generation**</h2>
+- <h2 align="center">World-list Generation</h2>
 
     -   **Crunch tool**
 
@@ -43,17 +43,11 @@
     -   **CEWL tool**
 
 	" Generate a world-list about the target from given URL by searching in the site's words and metadata"
-        
         -   Cewl --help
-        
         -   Cewl -w pass.txt \[url\]
-        
         -   Cewl -m 5 -w pass.txt \[url\]
-
             -   -\> with minimum nb of char of 5
-
         -   Cewl -d 1 -m 5 \--with-numbers -v -w passcewl.txt \[url\]
-
 
     -   **CUPP tool**
 
@@ -94,13 +88,13 @@
         -   **Fuzzdb wordlists 	  -\>** git clone <https://github.com/fuzzdb-project/fuzzdb.git>
 
 
-- <h2 align="center">**PASSWORD CRACKING**</h2>
+- <h2 align="center">PASSWORD CRACKING</h2>
 
     -   **Passive online attack**
 
-        -   **Cain & adel**
+        -   Cain & adel
 
-        -   **Ettercap**
+        -   Ettercap
 
     -   **Active online attack**
 
@@ -292,7 +286,7 @@
 
         -   **social Engineering and Shoulder Surfing**
 
-<h2 align="center">**JOHN THE RIPPER VS HASHCAT :**</h2>
+<h2 align="center">JOHN THE RIPPER VS HASHCAT </h2>
 
 " While John the Ripper is a great tool for cracking password hashes, its speed is limited to the power of the CPUs dedicated to the task. In
 recent years, Graphic Processing Units (GPUs) have become incredibly powerful and are, of course, found in every computer with a display.
@@ -386,7 +380,7 @@ leverage the power of both the CPU and the GPU to reach incredible password crac
         -   \--username: This tells Hashcat that the input file contains not only hashes but also usernames; it Expects the "username: hash "format
 
 
-- <h2 align="center">**Mimikatz**</h2>
+- <h2 align="center">Mimikatz</h2>
 
     -   **What is mimikatz**
 
@@ -394,8 +388,7 @@ leverage the power of both the CPU and the GPU to reach incredible password crac
             tickets** and password hashes
 
         -   After a user logs on, a variety of credentials are generated  and stored in the Local Security Authority Subsystem
-            Service, [LSASS, ](http://en.wikipedia.org/wiki/Local_Security_Authority_Subsystem_Service)and
-            process in memory. This is meant to facilitate single  sign-on (SSO) ensuring a user isn't prompted each time
+            Service,LSASS and process in memory. This is meant to facilitate single  sign-on (SSO) ensuring a user isn't prompted each time
             resource access is requested. The credential data may include Kerberos tickets, NTLM password hashes, LM password
             and even clear-text passwords (to support WDigest and SSP authentication among others, though in order to prevent the
             "clear-text" password from being placed in LSASS, the following registry key needs to be set to "0" (Digest Disabled):
@@ -507,7 +500,7 @@ leverage the power of both the CPU and the GPU to reach incredible password crac
         -   kerberos::golden /admin:administrateur /domain:example.local
             /sid:S-1-5-21-130452501-2365100805-3685010670 /krbtgt:{NTLM\_hash} /ticket:chocolate.kirbi
 
-        -   kerberos::ptt Administrateur\@krbtgt-CHOCOLATE.LOCAL.kirbi -\>ptt
+        -   kerberos::ptt Administrateur\@krbtgt-domain.LOCAL.kirbi -\>ptt
 
         -   kerberos::tgt    -\>tgt
 
