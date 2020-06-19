@@ -1,4 +1,4 @@
-<h1 align="center">**Resources**</h1>
+<h1 align="center">Resources</h1>
 
 1.  **OSINT**
 
@@ -325,6 +325,7 @@
 **\[+\] Windows vulnerabilities:**
 
 **Windows XP:**
+<pre>
 
 -   CVE-2012-4349        Unquoted windows search path - Windows provides the capability of including spaces in path names - can be root
 
@@ -354,7 +355,10 @@
 
 -   CVE-2004-0206        ms04\_031\_netdde - exploits a stack buffer overflow in the NetDDE service
 
+</pre>
+
 **Windows 7:**
+<pre>
 
 -   CVE-2014-4114        ms14\_060\_sandworm - exploits a vulnerability found in Windows Object Linking and Embedding - arbitrary code execution
 
@@ -376,7 +380,11 @@
 
 -   CVE-2010-2568        ms10\_046\_shortcut\_icon\_dllloader - exploits a vulnerability in the handling of Windows Shortcut files (.LNK) - run a payload
 
+</pre>
+
 **Windows 8:**
+
+<pre>
 
 -   CVE-2013-0008        ms13\_005\_hwnd\_broadcast - attacker can broadcast commands from lower Integrity Level process to a higher one - privilege escalation
 
@@ -396,9 +404,11 @@
 
 -   CVE-2015-0002        ntapphelpcachecontrol - NtApphelpCacheControl Improper Authorization Check - privilege escalation
 
-   
+</pre>   
 
 **Windows 10:**
+
+<pre>
 
 -   CVE-2015-1769        MS15-085 - Vulnerability in Mount Manager - Could Allow Elevation of Privilege
 
@@ -417,13 +427,19 @@
 
 -   CVE-2015-0057        exploits GUI component of Windows namely the scrollbar element - allows complete control of a Windows machine
 
+</pre>
+
 **Windows Server 2003:**
+
+<pre>
 
 -   CVE-2008-4114        ms09\_001\_write - exploits a denial of service vulnerability in the SRV.SYS driver - DoS
 
 -   CVE-2008-4250        ms08\_067\_netapi  - exploits a parsing flaw in the path canonicalization code of NetAPI32.dll - bypassing NX
 
 -   CVE-2017-8487        allows an attacker to execute code when a victim opens a specially crafted file - remote code execution
+
+</pre>
 
 **\[+\] Windows version number:**
 <pre>
@@ -445,5 +461,5 @@
 -  Windows Vista                              6.0.6000
 -  Windows 7                                  6.1.7600
 -  Windows 8.1                                6.3.9600
--  Windows 10                                10.0.10240
+-  Windows 10                                 10.0.10240
 </pre>

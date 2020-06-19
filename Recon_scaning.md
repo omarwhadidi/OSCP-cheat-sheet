@@ -681,7 +681,7 @@
     -   **Powercat**
 
 
-- <h2 align="center"> Nmap : </h2>
+- <h2 align="center"> Nmap  </h2>
 
     -   **Nmap timing**
 
@@ -805,39 +805,39 @@
 
     -   **Nmap scripting engine**     
 
-    -   **Scripts location**
+        -   **Scripts location**
 
-        -    ls /usr/share/nmap/scripts/ 
+            -    ls /usr/share/nmap/scripts/ 
 
-    -   **Categories of scripts (nse) -\>** written in lua
+        -   **Categories of scripts (nse) -\>** written in lua
 
-        -   vuln : look for a given vuln in the target
+            -   vuln : look for a given vuln in the target
 
-        -   Default : run this set of scripts when -sC or -A without specefiying a category
+            -   Default : run this set of scripts when -sC or -A without specefiying a category
 
-        -   Version : detect the version of target s services
+            -   Version : detect the version of target s services
 
-        -   Safe
+            -   Safe
 
-        -   Malware
+            -   Malware
 
-        -   Exploit :exploit  a discovered  vulnerability 
+            -   Exploit :exploit  a discovered  vulnerability 
 
-        -   External
+            -   External
 
-        -   Brute : make a brute force authentication attempts
+            -   Brute : make a brute force authentication attempts
 
-        -   Discovery
+            -   Discovery
 
-        -   Fuzzer : sending a lot of data to target system to crash a service to find buffer overflow vuln 
+            -   Fuzzer : sending a lot of data to target system to crash a service to find buffer overflow vuln 
 
-        -   Auth : test for issues associated with authentication
+            -   Auth : test for issues associated with authentication
 
-        -   Broadcast
+            -   Broadcast
 
-        -   dos : may cause denial of service
+            -   dos : may cause denial of service
 
-        -   Intrusive
+            -   Intrusive
 
     -   **Examples**
 
@@ -877,7 +877,7 @@
 
             -   -\> generating a nice report
 
-<h2 align="center">masscan </h2>
+<h2 align="center">Masscan </h2>
 
 <p align="center">"Fastest port scanner can scan the whole internet in 6 mins " </p>
 
@@ -930,7 +930,7 @@
         -   -\> specify the interface + udp scan
 
 
-<h2 align="center">**ENUMERATION** </h2>
+<h2 align="center">ENUMERATION</h2>
 
 -   **Snmp Enum (port 161 , 162)**
 
