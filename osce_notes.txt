@@ -1,0 +1,165 @@
+courses :
+-Offensive Security Certified Professional (OSCP) = pwk couse
+-Offensive Security Certified Expert (OSCE)       = Cracking the Perimeter (CTP) course
+-Offensive Security Web Expert (OSWE)             = Advanced Web Attacks and Exploitation (AWAE) course
+-Offensive Security Wireless Professional (OSWP)  = Offensive Security Wireless Attacks (WiFu) course
+-Offensive Security Exploitation Expert (OSEE)    = hands-on Advanced Windows Exploitation (AWE) course
+    Develop sophisticated exploits
+    Create custom shellcode
+    Evade DEP and ASLR protections
+    Perform precision heap sprays
+    64 and 32 Bit Windows Kernel Driver Exploitation
+    Kernel Pool Exploitation
+    NX/ASLR Bypass
+    Disarming EMET Mitigations to gain reliable code execution
+--------------------------------------------------------------------------------
+[+]Syllabus
+
+1]Introduction
+2]The Web Application Angle
+   Cross Site Scripting Attacks – Scenario #1
+   Real World Scenario
+   Directory traversal – Scenario #2
+   Real World Scenario
+3]The Backdoor Angle
+   Backdooring PE files under Windows Vista
+4]Advanced Exploitation Techniques
+  MS07-017 – Dealing with Vista
+  Cracking the Egghunter
+5]The 0Day Angle
+  Windows TFTP Server – Case study #1
+  HP Openview NNM – Case study #2
+6]The Networking Angle – Attacking the Infrastructure
+  Bypassing Cisco Access Lists using Spoofed SNMP Requests
+  GRE Route-Map Kung Fu
+  Sniffing Remote Traffic via GRE tunnel
+  Compromised Router Config
+
+-------------------------------------------------------------------------------
+[+]topics :
+
+-Web application hacking
+-PE backdooring
+-Antivirus bypass
+-Fuzzing
+-ASLR bypass
+-SEH overwrites
+-Egghunters
+-Writing encoders
+-Shellcoding (at a basic level)
+-GRE tunnelling
+
+------------------------------------------------------------------------------------
+[+]Material :
+ https://tulpa-security.com/2017/07/18/288/   //best one
+ https://github.com/snoopysecurity/OSCE-Prep
+ https://www.abatchy.com/2017/03/osce-study-plan
+ https://jhalon.github.io/OSCE-Review/
+ https://netsec.ws/?p=517
+ https://sock-raw.org/blog/osce-review/
+ https://www.doyler.net/security-not-included/osce-review-and-exam
+ https://coffeegist.com/security/my-osce-review/
+ https://blog.own.sh/oscp-osce-oswp-review/
+ https://stacktrac3.co/osce-review-ctp-course/
+ https://medium.com/@david.valles/the-road-to-osce-40b4c01db666
+ https://iwantmore.pizza/posts/ctp-osce-guide.html
+ https://blog.g0tmi1k.com/2013/08/cracking-perimeter-ctp-offensive/
+ https://www.securitysift.com/offsec-ctp-osce/
+ http://tekwizz123.blogspot.in/2014/09/osce-review-and-experience.html
+ https://www.linkedin.com/pulse/osce-course-exam-review-christopher-hudel/
+ https://community.infosecinstitute.com/discussion/120656/osce-jollyfrogs-tale
+ https://ihack4falafel.github.io/Offensive-Security-AWEOSEE-Review/
+
+[+]subencode
+  https://marcosvalle.github.io/re/exploit/2018/10/05/sub-encoding.html
+  http://vellosec.net/2018/08/carving-shellcode-using-restrictive-character-sets/
+
+[+]PE FILE STRUCTURE :
+  https://blog.kowalczyk.info/articles/pefileformat.html
+  https://tech-zealots.com/malware-analysis/pe-portable-executable-structure-malware-analysis-part-2/
+  https://www.youtube.com/watch?v=K0g-twyhmQ4&t=16s
+ 
+[+]fuzzing:
+ https://resources.infosecinstitute.com/intro-to-fuzzing/#gref      //spike
+ https://www.doyler.net/security-not-included/boofuzz-introduction  //boofuzz
+ https://www.mwrinfosecurity.com/our-thinking/15-minute-guide-to-fuzzing/
+ https://www.youtube.com/watch?v=j05KaAcjZec
+ http://sh3llc0d3r.com/vulnserver-fuzzing-with-spike/
+
+[+]Exploit Development :
+  http://fuzzysecurity.com/tutorials/expDev/1.html
+  https://www.securitysift.com/windows-exploit-development-part-1-basics/
+  https://www.corelan.be/index.php/2009/07/19/exploit-writing-tutorial-part-1-stack-based-overflows/
+  https://www.corelan.be/index.php/2009/07/23/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-2/
+  https://www.corelan.be/index.php/2009/07/25/writing-buffer-overflow-exploits-a-quick-and-basic-tutorial-part-3-seh/
+  https://www.corelan.be/index.php/2009/07/28/seh-based-exploit-writing-tutorial-continued-just-another-example-part-3b/
+  https://www.corelan.be/index.php/2009/08/12/exploit-writing-tutorials-part-4-from-exploit-to-metasploit-the-basics/
+  https://www.corelan.be/index.php/2009/09/05/exploit-writing-tutorial-part-5-how-debugger-modules-plugins-can-speed-up-basic-exploit-development/
+  https://www.corelan.be/index.php/2009/09/21/exploit-writing-tutorial-part-6-bypassing-stack-cookies-safeseh-hw-dep-and-aslr/
+  https://www.corelan.be/index.php/2009/11/06/exploit-writing-tutorial-part-7-unicode-from-0x00410041-to-calc/
+  https://www.corelan.be/index.php/2010/01/09/exploit-writing-tutorial-part-8-win32-egg-hunting/
+  https://www.corelan.be/index.php/2010/02/25/exploit-writing-tutorial-part-9-introduction-to-win32-shellcoding/
+  https://www.corelan.be/index.php/2010/06/16/exploit-writing-tutorial-part-10-chaining-dep-with-rop-the-rubikstm-cube/
+  https://www.corelan.be/index.php/2011/12/31/exploit-writing-tutorial-part-11-heap-spraying-demystified/
+
+  https://cs.lmu.edu/~ray/notes/nasmtutorial/    //assembly basics
+  http://opensecuritytraining.info/IntroX86.html  //assembly basics
+  https://cs.lmu.edu/~ray/notes/nasmtutorial/   //assembly basics
+  http://security.cs.rpi.edu/courses/binexp-spring2015/lectures/7/05_lecture.pdf
+  http://sh3llc0d3r.com/windows-reverse-shell-shellcode-i/
+  https://idafchev.github.io/exploit/2017/09/26/writing_windows_shellcode.html
+  http://www.gosecure.it/blog/art/452/sec/create-a-custom-shellcode-using-system-function/
+  https://www.abatchy.com/2017/05/jumping-to-shellcode.html
+  https://thestarman.pcministry.com/asm/2bytejumps.htm
+  https://www.cs.virginia.edu/~evans/cs216/guides/x86.html
+  http://shell-storm.org/shellcode/    //usefull material
+  http://www.asciitable.com/           //usefull material
+ 
+  https://blog.knapsy.com/blog/2017/05/01/quickzip-4-dot-60-win7-x64-seh-overflow-egghunter-with-custom-encoder/
+
+  http://www.fuzzysecurity.com/tutorials/expDev/4.html
+  http://www.hick.org/code/skape/papers/egghunt-shellcode.pdf
+  https://medium.com/syscall59/on-eggs-and-egg-hunters-linux-x64-305b947f792e
+  https://www.secpod.com/blog/hunting-the-egg-egg-hunter/
+  https://www.corelan.be/index.php/2019/04/23/windows-10-egghunter/
+   
+  https://www.fuzzysecurity.com/tutorials/mr_me/3.html   //heap buffer overflow
+  https://buffered.io/posts/jumping-with-bad-chars/     //bad characters
+  http://opensecuritytraining.info/Exploits1.html
+  https://www.ma.rhul.ac.uk/static/techrep/2009/RHUL-MA-2009-06.pdf
+
+  https://www.corelan.be/index.php/2009/09/21/exploit-writing-tutorial-part-6-bypassing-stack-cookies-safeseh-hw-dep-and-aslr/
+  https://www.abatchy.com/2017/06/exploit-dev-101-bypassing-aslr-on.html
+  https://tekwizz123.blogspot.com/2014/02/bypassing-aslr-and-dep-on-windows-7.html
+  https://www.exploit-db.com/docs/english/17914-bypassing-aslrdep.pdf
+  https://www.mattandreko.com/2013/04/06/buffer-overflow-in-hexchat-2.9.4/
+
+[+]AV bypass:
+  https://captmeelo.com/exploitdev/osceprep/2018/07/16/backdoor101-part1.html
+  https://www.exploit-db.com/docs/english/42061-introduction-to-manual-backdooring.pdf
+  https://pentest.blog/art-of-anti-detection-2-pe-backdoor-manufacturing/
+  https://resources.infosecinstitute.com/bypassing-antivirus/
+  https://pentest.blog/art-of-anti-detection-1-introduction-to-av-detection-techniques/
+  https://dl.packetstormsecurity.net/papers/bypass/bypassing-av.pdf
+  https://www.youtube.com/watch?v=tBY46vs0ptE
+  https://www.lmgsecurity.com/common-antivirus-bypass-techniques/
+  https://null-byte.wonderhowto.com/forum/creating-completely-undetectable-executable-under-15-minutes-0175114/
+
+[+]vulnserver :
+    http://www.thegreycorner.com/2010/12/introducing-vulnserver.html
+    https://h0mbre.github.io/LTER_SEH_Success/#.
+    https://github.com/strikergoutham/OSCE-preparation
+    https://www.absolomb.com/2018-07-24-VulnServer-GTER/
+    https://purpl3f0xsec.tech/2019/09/10/Vulnserver-LTER.html
+    http://sh3llc0d3r.com/vulnserver-trun-command-buffer-overflow-exploit/
+    http://sh3llc0d3r.com/vulnserver-gmon-command-seh-based-overflow-exploit/
+    http://sh3llc0d3r.com/vulnserver-hter-command-buffer-overflow-exploit/
+    http://sh3llc0d3r.com/vulnserver-kstet-command-exploit-with-egghunter/
+    https://www.exploit-db.com/exploits/17527
+    https://www.exploit-db.com/exploits/33453
+    https://www.exploit-db.com/exploits/33538
+    https://www.exploit-db.com/exploits/27747
+    https://www.exploit-db.com/exploits/11872
+    https://www.exploit-db.com/exploits/11764
+    https://github.com/stephenbradshaw/vulnserver
+
