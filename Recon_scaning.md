@@ -931,6 +931,7 @@
 
 
 <h2 align="center">ENUMERATION</h2>
+![Enumeration](images/Enumeration.png)
 
 -   **Snmp Enum (port 161 , 162)**
 
